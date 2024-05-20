@@ -56,9 +56,11 @@
        // Remove red outline from all links
       document.querySelectorAll('.navbar ul li a').forEach(function(link) {
         link.style.border = 'none';
+        link.style.color = 'white'; // Reset color
       });
       // Add red outline to the selected link
-      document.querySelector('.navbar ul li a[href="#' + sectionId + '"]').style.border = '2px solid red';
+      document.querySelector('.navbar ul li a[href="#' + sectionId + '"]').style.color = 'red';
+      document.querySelector('.navbar ul li a[href="#' + sectionId + '"]').style.webkitTextStroke = '1px red'; // Outline for letters
     }
   </script>
 </body>
