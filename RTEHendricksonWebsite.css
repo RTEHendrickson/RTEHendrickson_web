@@ -31,6 +31,14 @@ body{
 }
 .navbar ul li a:hover {
   color: #b9b9b9;
+}
+.section {
+  padding: 100px 20px; /* Add padding to prevent content overlap with navbar */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 20px;
+  border-radius: 10px;
+}
 .box{
   width: 450px;
   background: rgba(0, 0, 0, 0.4);
@@ -59,7 +67,7 @@ body{
 .box p{
   text-align: justify;
 }
-ul{
+.box ul{
   margin: 0;
   padding: 0;
 }
