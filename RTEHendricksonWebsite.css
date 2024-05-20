@@ -26,8 +26,8 @@ body{
   text-align: center;
   display: flex; /* Use flexbox for horizontal alignment */
   flex-grow: 1; /* Make the ul take the remaining space */
-  justify-content: flex-end; /* Move the links to the right */
-  margin-right: 15px; 
+  justify-content: flex-start; /* Move the links to the right */
+  margin-left: 20px; 
 }
 
 .navbar ul li {
