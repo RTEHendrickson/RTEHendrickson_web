@@ -12,6 +12,7 @@ body{
   display: flex;
   align-items: center; /* Vertically center the navbar content */
   z-index: 1000;
+  overflow: hidden;
 }
 .navbar ul {
   padding: 0;
