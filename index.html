@@ -55,13 +55,10 @@
       document.getElementById(sectionId).style.display = 'block';
       // Remove outline and red color from all links
       document.querySelectorAll('.navbar ul li a').forEach(function(link) {
-        link.style.color = 'white';
-        link.style.webkitTextStroke = 'none'; // Reset outline for letters
+        link.classList.remove('selected');
       });
       // Add outline to the selected link
-      var selectedLink = document.querySelector('.navbar ul li a[href="#' + sectionId + '"]');
-      selectedLink.style.color = 'red';
-      selectedLink.style.webkitTextStroke = '1px red'; // Outline for letters
+      document.querySelector('.navbar ul li a[href="#' + sectionId + '"]').classList.add('selected');
     }
 
     // Set the initial section to be shown (home)
