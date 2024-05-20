@@ -27,6 +27,7 @@ body{
   display: flex; /* Use flexbox for horizontal alignment */
   flex-grow: 1; /* Make the ul take the remaining space */
   justify-content: flex-end; /* Move the links to the right */
+  margin-right: 15px; 
 }
 
 .navbar ul li {
