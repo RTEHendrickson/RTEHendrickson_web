@@ -39,7 +39,6 @@ body{
   color: white;
   font-size: 24px;
   font-family: 'Century Gothic', sans-serif;
-  transition: color 0.3s;
   line-height: 80px; 
 }
 .navbar ul li a:hover {
