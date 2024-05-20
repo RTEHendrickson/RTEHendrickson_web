@@ -15,7 +15,10 @@ body{
   top: 0; /* Remove the space between the navbar and the top */
   padding: 0 20px; /* Add some padding for the logo and the links */
 }
-
+.navbar .logo {
+  max-height: 80px; /* Adjust the height to fit the navbar */
+  margin-right: 20px;
+}
 .navbar ul {
   padding: 0;
   margin: 0;
