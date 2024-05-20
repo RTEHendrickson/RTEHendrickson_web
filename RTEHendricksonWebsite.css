@@ -10,6 +10,9 @@ body{
   height: 80px;
   position: fixed; 
   background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center; /* Vertically center the navbar content */
+  z-index: 1000;
 }
 .navbar ul {
   padding: 0;
