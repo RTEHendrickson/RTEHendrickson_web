@@ -16,7 +16,7 @@ body{
   padding: 0 20px; /* Add some padding for the logo and the links */
 }
 .navbar .logo {
-  width: 50px; /* Adjust the size of your logo */
+  max-height: 80px; /* Adjust the size of your logo */
   margin-right: 20px;
 }
 
