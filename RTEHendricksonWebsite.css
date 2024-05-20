@@ -3,6 +3,7 @@ body{
   padding: 0;
   background: url(IMG_4412.jpeg) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .box{
   width: 450px;
