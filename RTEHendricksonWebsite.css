@@ -7,6 +7,8 @@ body{
 }
 .navbar {
   width: 100%;
+  height: 80px;
+  position: fixed; 
   background-color: rgba(0, 0, 0, 0.8);
   overflow: auto;
 }
@@ -19,21 +21,22 @@ body{
 
 .navbar ul li {
   display: inline;
-  padding: 16px 20px;
+  padding: 0p 20px;
 }
 
 .navbar ul li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   font-family: 'Century Gothic', sans-serif;
   transition: color 0.3s;
+  line-height: 80px; 
 }
 .navbar ul li a:hover {
   color: #b9b9b9;
 }
 .section {
-  padding: 100px 20px; /* Add padding to prevent content overlap with navbar */
+  padding: 120px 20px; /* Add padding to prevent content overlap with navbar */
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   margin: 20px;
