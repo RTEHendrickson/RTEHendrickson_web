@@ -31,7 +31,6 @@ body{
 
 .navbar ul li {
   display: inline;
-  padding: 0 20px;
 }
 
 .navbar ul li a {
@@ -40,6 +39,7 @@ body{
   font-size: 24px;
   font-family: 'Century Gothic', sans-serif;
   line-height: 80px; 
+  padding: 0 20px;
 }
 .navbar ul li a:hover {
   color: #b9b9b9;
