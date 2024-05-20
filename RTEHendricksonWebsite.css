@@ -8,7 +8,7 @@ body{
 .navbar {
   width: 100%;
   position: fixed; 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
   display: flex;
   align-items: center; /* Vertically center the navbar content */
   z-index: 1000;
@@ -31,7 +31,7 @@ body{
 
 .navbar ul li {
   display: inline;
-  padding: 0p 20px;
+  padding: 0 20px;
 }
 
 .navbar ul li a {
@@ -43,6 +43,10 @@ body{
 }
 .navbar ul li a:hover {
   color: #b9b9b9;
+}
+.navbar ul li a.selected {
+  color: red;
+  -webkit-text-stroke: 1px red; /* Outline for letters */
 }
 .section {
   padding: 120px 20px; /* Add padding to prevent content overlap with navbar */
