@@ -47,21 +47,25 @@
   
 <script>
   function showSection(sectionId) {
-      // Hide all sections
+     // Hide all sections
       document.querySelectorAll('.section').forEach(function(section) {
         section.style.display = 'none';
       });
       // Show the selected section
       document.getElementById(sectionId).style.display = 'block';
-       // Remove red outline from all links
+      // Remove outline and red color from all links
       document.querySelectorAll('.navbar ul li a').forEach(function(link) {
-        link.style.border = 'none';
-        link.style.color = 'white'; // Reset color
+        link.style.color = 'white';
+        link.style.webkitTextStroke = 'none'; // Reset outline for letters
       });
-      // Add red outline to the selected link
-      document.querySelector('.navbar ul li a[href="#' + sectionId + '"]').style.color = 'red';
-      document.querySelector('.navbar ul li a[href="#' + sectionId + '"]').style.webkitTextStroke = '1px red'; // Outline for letters
+      // Add outline to the selected link
+      var selectedLink = document.querySelector('.navbar ul li a[href="#' + sectionId + '"]');
+      selectedLink.style.color = 'red';
+      selectedLink.style.webkitTextStroke = '1px red'; // Outline for letters
     }
+
+    // Set the initial section to be shown (home)
+    showSection('home');
   </script>
 </body>
 </html>
