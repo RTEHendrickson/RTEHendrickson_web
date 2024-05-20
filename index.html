@@ -9,6 +9,7 @@
 <body>
   <div class="navbar">
     <ul>
+      <img src="Temple_T_logo.svg.png" alt="school-logo" class="logo"
       <li><a href="#home" onclick="showSection('home')">Home</a></li>
       <li><a href="#research" onclick="showSection('research')">Research</a></li>
       <li><a href="#gallery" onclick="showSection('gallery')">Gallery</a></li>
@@ -43,14 +44,21 @@
   <h2>Blog</h2>
   <p>Random blog of Railfan Rob's Adventures.</p>
 </div>
-    <script>
-    function showSection(sectionId) {
+  
+<script>
+  function showSection(sectionId) {
       // Hide all sections
       document.querySelectorAll('.section').forEach(function(section) {
         section.style.display = 'none';
       });
       // Show the selected section
       document.getElementById(sectionId).style.display = 'block';
+       // Remove red outline from all links
+      document.querySelectorAll('.navbar ul li a').forEach(function(link) {
+        link.style.border = 'none';
+      });
+      // Add red outline to the selected link
+      document.querySelector('.navbar ul li a[href="#' + sectionId + '"]').style.border = '2px solid red';
     }
   </script>
 </body>
