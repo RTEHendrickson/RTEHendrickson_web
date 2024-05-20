@@ -39,6 +39,13 @@ body{
   margin: 20px;
   border-radius: 10px;
 }
+#home {
+  background: none; /* Remove background for the home section */
+  padding-top: 120px; /* Add some padding to account for the fixed navbar */
+}
+.section:not(#home) {
+  background: rgba(255, 255, 255, 0.8); /* Background for other sections */
+}
 .box{
   width: 450px;
   background: rgba(0, 0, 0, 0.4);
