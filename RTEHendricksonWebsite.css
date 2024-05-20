@@ -12,12 +12,22 @@ body{
   display: flex;
   align-items: center; /* Vertically center the navbar content */
   z-index: 1000;
+  top: 0; /* Remove the space between the navbar and the top */
+  padding: 0 20px; /* Add some padding for the logo and the links */
 }
+.navbar .logo {
+  width: 50px; /* Adjust the size of your logo */
+  margin-right: 20px;
+}
+
 .navbar ul {
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: center;
+  display: flex; /* Use flexbox for horizontal alignment */
+  flex-grow: 1; /* Make the ul take the remaining space */
+  justify-content: flex-end; /* Move the links to the right */
 }
 
 .navbar ul li {
