@@ -61,7 +61,7 @@ body{
   padding-top: 120px; /* Add some padding to account for the fixed navbar */
 }
 .section:not(#home) {
-  background: rgba(255, 255, 255, 0.8); /* Background for other sections */
+  padding: 0;
 }
 .box{
   width: 450px;
@@ -108,3 +108,20 @@ body{
 .box li a:hover{
   color: #b9b9b9;
 }
+.about-content{
+  display: flex;
+  align-items: center;
+  justifiy-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+.about-content .text{
+  max-width: 600px;
+  text-align: left;
+  font-family: 'Century Gothic', sans-serif
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+  
