@@ -115,7 +115,12 @@ body{
   gap: 20px;
   padding: 40px;
 }
-.about-content .text{
+.about-content img {
+  border-radius: 10px;
+  max-width: 300px;
+  height: auto;
+}
+.about-content .text {
   max-width: 600px;
   text-align: left;
   font-family: 'Century Gothic', sans-serif
