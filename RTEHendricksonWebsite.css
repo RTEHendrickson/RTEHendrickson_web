@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(IMG_4412.jpeg) no-repeat;
+  background: url(../images/IMG_4412.jpeg) no-repeat;
   background-size: cover;
   background-position: 70% 40%;
 }
@@ -112,7 +112,7 @@ body{
 .about-content{
   display: flex;
   align-items: center;
-  justifiy-content: center;
+  justify-content: center;
   gap: 20px;
   padding: 40px;
 }
@@ -120,8 +120,10 @@ body{
   border-radius: 10px;
   max-width: 300px;
   height: auto;
+  flex-shrink: 0;
 }
 .about-content .text {
+  flex-grow: 1;
   max-width: 600px;
   text-align: left;
   font-family: 'Century Gothic', sans-serif;

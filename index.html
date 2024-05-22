@@ -8,7 +8,7 @@
   </head>
 <body>
   <div class="navbar">
-    <img src="Temple_T_logo.svg.png" alt="school-logo" class="logo">
+    <img src="images/Temple_T_logo.svg.png" alt="school-logo" class="logo">
      <ul>
       <li><a href="#home" onclick="showSection('home')">Home</a></li>
       <li><a href="#research" onclick="showSection('research')">Research</a></li>
@@ -19,7 +19,7 @@
   </div>
 <div id="home" class="section">
   <div class="box">
-  <img src="IMG_3650-min.jpg" alt="profile-pic" class="box-img">
+  <img src="images/IMG_3650-min.jpg" alt="profile-pic" class="box-img">
   <h1>Robert Thomas Enemecio Hendrickson</h1>
   <h5>Biology PhD Student - Temple University</h5>
   <p>Interdiscplinary biologist, specializing in spatial and geographic data analysis and machine learning for agroecology applications.</p>
@@ -43,8 +43,8 @@
 
 <div id="about" class="section" style="display:none;">
   <div class="about-content">
-    <img src="labphoto.jpg" alt="about-pic">
-    <div class="text"
+    <img src="images/labphoto.jpg" alt="about-pic">
+    <div class="text">
       <h2>About</h2>
       <p>give my life and sob story here.</p>
     </div>
@@ -56,24 +56,7 @@
   <p>Random blog of Railfan Rob's Adventures.</p>
 </div>
   
-<script>
-  function showSection(sectionId) {
-     // Hide all sections
-      document.querySelectorAll('.section').forEach(function(section) {
-        section.style.display = 'none';
-      });
-      // Show the selected section
-      document.getElementById(sectionId).style.display = 'block';
-      // Remove outline and red color from all links
-      document.querySelectorAll('.navbar ul li a').forEach(function(link) {
-        link.classList.remove('selected');
-      });
-      // Add outline to the selected link
-      document.querySelector('.navbar ul li a[href="#' + sectionId + '"]').classList.add('selected');
-    }
+<script src="script.js"></script>
 
-    // Set the initial section to be shown (home)
-    showSection('home');
-  </script>
 </body>
 </html>
