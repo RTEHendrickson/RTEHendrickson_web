@@ -6,21 +6,69 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       color: #000000;
       text-align: center;
+      margin: 0;
+      padding: 0;
     }
-    h2 {
-      font-size: 24px;
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px;
     }
-    p {
+    .header {
+      background-color: #ffcc00;
+      border: 2px solid #000000;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .section {
+      border: 2px solid #000000;
+      background-color: #e0e0e0;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      background-color: #00ccff;
+      padding: 10px;
+      margin: -20px -20px 20px -20px;
+      border-bottom: 2px solid #000000;
+    }
+    .section p {
       font-size: 16px;
+      line-height: 1.5;
+    }
+    .footer {
+      background-color: #ffcc00;
+      border: 2px solid #000000;
+      padding: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <h2>Railfan Rob's Adventures</h2>
-  <p>Welcome to my blog! Here you'll find stories and photos from my railfan adventures.</p>
-  <!-- Add more content as desired -->
+  <div class="container">
+    <div class="header">
+      <h1>Railfan Rob's Adventures</h1>
+    </div>
+    <div class="section">
+      <h2>Welcome</h2>
+      <p>Welcome to my blog! Here you'll find stories and photos from my railfan adventures.</p>
+      <!-- Add more content as desired -->
+    </div>
+    <div class="section">
+      <h2>Recent Posts</h2>
+      <p>Stay tuned for updates on my latest adventures!</p>
+      <!-- Add more content as desired -->
+    </div>
+    <div class="footer">
+      <p>&copy; 2024 Railfan Rob's Adventures</p>
+    </div>
+  </div>
 </body>
-</html>
